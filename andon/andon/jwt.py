@@ -41,12 +41,12 @@ class Jwt():
         hm = hmac.new(key, header_bs + b'.' + payload_bs, digestmod='SHA256')
         hm_bs = Jwt.b64encode(hm.digest())
 
-        return header_bs + b'.' + payload_bs + b'.' +hm_bs
+        return header_bs + b'.' + payload_bs + b'.' + hm_bs
 
     @staticmethod
     def b64encode(j_s):
         # 替换生成出来的b64串中的占位符
-        return base64.urlsafe_b64decode(j_s).replace(b'=', b'')
+        return base64.urlsafe_b64encode(j_s).replace(b'=', b'')
 
     @staticmethod
     def b64decode(b64_s):
@@ -59,8 +59,41 @@ class Jwt():
     def decode(token, key):
         # 校验两次HMAC结果
         # 检查exp公有声明的有效性
-        # header_b, payload_b, sign = token.split(b'.')
+        header_b, payload_b, sign = token.split(b'.')
         if isinstance(key, str):
             key = key.encode()
         # 比较两次HMAC结果
-        hm = hmac.new(key, header_b)
+        hm = hmac.new(key, header_b + b'.' + payload_b, digestmod='SHA256')
+        if sign != Jwt.b64encode(hm.digest()):
+            raise JwtSignError('---sign error !!!')
+        # 获取payload
+        payload_json = Jwt.b64decode(payload_b)
+        payload = json.loads(payload_json.decode())
+        # 检查exp是否过期
+        exp = payload['exp']
+        now= time.time()
+        if now > exp:
+            # token验证已经过期
+            raise JwtExpireError('---The token is expire !!! ')
+        return payload
+
+
+class JwtSignError(Exception):
+    def __init__(self, error_msg):
+        self.error_msg = error_msg
+
+    def __str__(self):
+        return '<JwtSignError is %s>' % self.error_msg
+
+
+class JwtExpireError(Exception):
+    def __init__(self, error_msg):
+        self.error_msg = error_msg
+
+    def __str__(self):
+        return '<JwtExpireError is %s>' % self.error_msg
+
+
+if __name__ == '__main__':
+    s = Jwt.encode({'username': 'liuzixuan'}, 'abcde')
+    print(s)
