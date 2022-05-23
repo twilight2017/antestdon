@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b89cc74-6d51-4e23-9cf4-406a0807dbc6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/andon/andon/jwt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/andon/andon/libs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/andon/andon/libs/code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/andon/andon/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/andon/andon/serializers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/andon/andon/tokens.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/andon/andon/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="29T4Jg6RBnM7mUuyprKsqfIODv3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b89cc74-6d51-4e23-9cf4-406a0807dbc6" name="Default Changelist" comment="" />
+      <created>1653123670422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653123670422</updated>
+      <workItem from="1653123671769" duration="1756000" />
+      <workItem from="1653219457876" duration="5739000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-2081" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1653123690897">
+      <screen x="-2560" y="0" width="2048" height="1112" />
+    </state>
+    <state x="-2081" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1653123690897" />
+  </component>
+</project>
